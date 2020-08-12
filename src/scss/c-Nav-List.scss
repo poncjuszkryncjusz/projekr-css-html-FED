@@ -1,0 +1,87 @@
+.nav-list {
+    text-align: right;
+    margin-top: 6.25*$base-unit; // 100px
+
+    @include desktop {
+        margin: 0;
+    }
+
+    li {
+        text-align: center;
+        border-top: 1px solid $white;
+
+        @include desktop {
+            display: inline-block;
+            margin-left: 2*$base-unit;
+            border: 0;
+        }
+
+        a {
+            padding: 2*$base-unit 0;
+            display: block;
+            color: $white;
+
+            @include desktop {
+                color: $color-1;
+            }
+
+            &:hover {
+                color: $color-4;
+            }
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+}
+
+.menu-ham {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 2*$base-unit;
+    right: 2*$base-unit;
+
+    span {
+        width: $base-unit;
+        height: 2px;
+        background-color: red;
+        margin-bottom: 3px;
+        display: block;
+
+        body.open & {
+            background-color: $white;
+        }
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+}
+
+.nav-Container {
+    height: 5*$base-unit;
+    overflow: hidden;
+    position: relative;
+
+    body.open & {
+        height: 100vh;
+    }
+}
+
+nav {
+    body.open & {
+        background-color: $color-1;
+    }
+
+    @include desktop {
+        position: fixed; // pozycjonowane względem ekranu urządzenia
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 11;
+    }
+}

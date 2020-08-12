@@ -1,0 +1,75 @@
+.form {
+    .my-form {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -$base-unit;
+        padding-top: $space;
+
+        .column {
+            flex-basis: 50%;
+            padding: 0 $base-unit;
+        }
+        .row {
+            padding-bottom: 2 * $space;
+        }
+        label {
+            display: block;
+            margin-bottom: 2 * $base-unit;
+        }
+        .msg-error {
+            display: none;
+            color: $color-error;
+        }
+        &.is-submitted {
+            .msg-error {
+                display: block;
+            }
+            input,
+            select {
+                border-color: $color-error;
+                background-color: rgba($color-error, 0.2);
+            }
+        }
+        .npt {
+            width: 100%;
+        }
+    }
+    input {
+        &[type="checkbox"],
+        &[type="radio"] {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            & + label {
+                padding-left: $space;
+                position: relative;
+                &::before {
+                    font-size: 1.5em;
+                    content: "\2610";
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+        &[type="radio"] {
+            &:checked {
+                & + label {
+                    &::before {
+                        content: "\2BBE";
+                    }
+                }
+            }
+        }
+        &[type="checkbox"] {
+            &:checked {
+                & + label {
+                    &::before {
+                        content: "\2713";
+                    }
+                }
+            }
+        }
+    }
+}

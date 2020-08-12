@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <nav>
+    <div class="wrapper ">
+        <div class="nav-Container">
+            <img src="img/wild-things60.png" alt="logo" class="logo"/>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">CATEGORY 1</a>
+                </li>
+                <li>
+                    <a href="#">CATEGORY 2</a>
+                </li>
+                <li>
+                    <a href="#">CATEGORY 3</a>
+                </li>
+                <li>
+                    <a href="#">CATEGORY 4</a>
+                </li>
+                <li>
+                    <a href="#">CATEGORY 5</a>
+                </li>
+            </ul>
+            <button class="menu-ham" data-js="navButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+        <div class="hero">
+    <div class="wrapper">
+        <div class="hero__cont">
+            <h2>Lorem ipsum</h2>
+            <p>lorem ipsum</p>
+            <a class="btn" href="#">
+                <span>Kliknij</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        <div class="component"></div><div class="image">
+    <figure>
+        <picture>
+            <source media="(min-width:1280px)" srcset="img/flaming1920.jpg" />
+            <source media="(min-width:768px)" srcset="img/flaming1536.jpg" />
+            <source media="(orientation: portrait" srcset="img/flaming860-p.jpg" />
+            <img src="img/flaming742.jpg" alt="Flaming" />
+        </picture>
+    </figure>
+    <figcaption class="wrapper">
+        <h3>Flaming chodzący po wodzie</h3>
+        <p>Elegancki wygląd zawdzięcza smukłej sylwetce i stonowanemu ubarwieniu. Brak wyraźnego dymorfizmu płciowego,
+            choć samce są nieco większe od samic. Upierzenie białe z różowawym nalotem (w niewoli jest często wyblakły),
+            jaśniejsze niż u flaminga P. ruber, jedynie skrzydła czerwone z czarnymi lotkami (dobrze widoczne w locie).
+            Nogi i dziób różowe, koniec charakterystycznie zagiętego dzioba jest czarny. W porównaniu z innymi
+            przedstawicielami rodziny dziób wygięty pod mniejszym kątem. Esowato wygięta szyja, podobnie jak nogi, jest
+            długa. Przednie palce u nóg ma spięte błoną pławną. W locie ma wyciągniętą szyję i nogi. Wydaje gdaczący i
+            trąbiący dźwięk, przypominający odgłosy gęsi.
+            Młode ptaki są szarobrązowe, a od spodu białawe.</p>
+    </figcaption>
+</div></div>
+        <div class="component yt-video">
+    <div class="wrapper">
+        <div class="yt-video__cont"><iframe width="853" height="480" src="https://www.youtube.com/embed/2uzrHx-QxkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+        <div class="component video" data-video-cont>
+    <div class="wrapper">
+        <div class="video__cont" >
+            <video width="320" height="176" data-video>
+                <source src="img/mov_bbb.mp4" type="video/mp4">
+                <source src="img/mov_bbb.ogg" type="video/ogg">
+                Your browser doesn not support video tag.
+            </video>
+        </div>
+        <div class="video-controls" >
+            <button data-play>
+                <i class="ficons flaticon-play" ></i>
+            </button>
+            <button data-pause>
+                <i class="ficons flaticon-pause" ></i>
+            </button>
+            <div class="progress-bar" data-progress></div>
+        </div>
+    </div>
+</div> 
+        <div class="component boxes">
+    <div class="wrapper">
+        <h2>Category</h2>
+        <div class="boxes_cont">
+            <div class="box">
+                <img src="img/zebra384.jpg" alt="Flaming" />
+                <h3>Big lorem ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box"><img src="img/los384.jpg" alt="Flaming" />
+                <h3>Big lorem ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box">
+                <img src="img/koliber384.jpg" alt="Flaming" />
+                <h3>Big lorem ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box"><img src="img/tygrys384.jpg" alt="Flaming" />
+                <h3>Big lorem ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        <div class="component form">
+    <div class="wrapper">
+        <h2>Our form</h2>
+        <form class="my-form" novalidate="novalidate">
+            <div class="column">
+                <div class="row">
+                    <label for="">Field for text</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="Enter your name" required />
+                    <span class="msg-error">Wrong text!</span>
+
+                </div>
+                <div class="row">
+                    <label for="">Field for email</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="Enter your email" required />
+                    <span class="msg-error">Wrong text!</span>
+
+                </div>
+                <div class="row">
+                    <label for="">Field for postal code</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="xx-xxx"
+                        pattern="[0-9]{2}\-[0-9]{3}" required />
+                        <span class="msg-error">Wrong text!</span>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <label for="myChoose">Field for select</label>
+                    <select class="npt" id="myChoose" name="myCoose" required>
+                        <option value="" selected>Choose something...</option>
+                        <option value="1000">1000zl</option>
+                        <option value="2000">2000zl</option>
+                    </select>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+                <div class="row">
+                    <p>Are you sure?</p>
+                    <input type="radio" id="yes" name="decision" value="yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="decision" value="no" />
+                    <label for="yes">No</label>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+                <div class="row">
+                    <p>Please agree with me</p>
+                    <input type="checkbox" id="agree" name="agree" value="yes" />
+                    <label for="agree">Yes</label>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+        <div class="component">
+    <div class="wrapper">
+        <div class="transform-anim">
+            <img src="https://dummyimage.com/600x400" alt="" class="img-to-transform" />
+        </div>
+        <div id="apla">
+            <div class="img-los">
+                <img src="img/los384.jpg" alt="aaa"/>
+            </div>
+        </div>
+        <button type="button" class="btn-transform" id="apla-btn">CLICK HERE to see w photo</button>
+    </div>
+</div>
+
+        <footer class="footer">
+    <div class="wrapper">
+        <div class="footer_col">
+            <h4>Category 1</h4>
+            <ul>
+                <li>
+                    <a href="#">Position 1</a>
+                </li>
+                <li>
+                    <a href="#">Position 2</a>
+                </li>
+                <li>
+                    <a href="#">Position 3</a>
+                </li>
+                <li>
+                    <a href="#">Position 4</a>
+                </li>
+                <li>
+                    <a href="#">Position 5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>Category 2</h4>
+            <ul>
+                <li>
+                    <a href="#">Position 1</a>
+                </li>
+                <li>
+                    <a href="#">Position 2</a>
+                </li>
+                <li>
+                    <a href="#">Position 3</a>
+                </li>
+                <li>
+                    <a href="#">Position 4</a>
+                </li>
+                <li>
+                    <a href="#">Position 5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>Category 3</h4>
+            <ul>
+                <li>
+                    <a href="#">Position 1</a>
+                </li>
+                <li>
+                    <a href="#">Position 2</a>
+                </li>
+                <li>
+                    <a href="#">Position 3</a>
+                </li>
+                <li>
+                    <a href="#">Position 4</a>
+                </li>
+                <li>
+                    <a href="#">Position 5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_col">
+            <h4>Category 4</h4>
+            <ul>
+                <li>
+                    <a href="#">Position 1</a>
+                </li>
+                <li>
+                    <a href="#">Position 2</a>
+                </li>
+                <li>
+                    <a href="#">Position 3</a>
+                </li>
+                <li>
+                    <a href="#">Position 4</a>
+                </li>
+                <li>
+                    <a href="#">Position 5</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer_disclaimer">
+            © 2018 Front-End Development - Studia podyplomowe WI PB
+        </p>
+    </div>
+</footer>
+
+
+
+        <script src="js/app.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

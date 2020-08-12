@@ -1,0 +1,26 @@
+.boxes {
+    &_cont {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -$base-unit;
+    }
+    .box {
+        flex-basis: 100%;
+        @include tablet {
+            flex-basis: 50%;
+        }
+        @include desktop {
+            flex-basis: 25%;
+        }
+        padding: 0 $base-unit;
+        &:nth-child(3),
+        &:nth-child(4) {
+            img {
+                @include borderRadius(50%);
+            }
+        }
+        &:last-child {
+            @include verticalGradient(red, blue)
+        }
+    }
+}

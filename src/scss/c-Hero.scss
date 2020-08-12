@@ -1,0 +1,83 @@
+.hero {
+    height: 450px;
+    background-image: url('../img/hero-mob.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.2)1px, transparent 1px),
+        linear-gradient(to right , rgba(0,0,0,0.2)1px, transparent 1px);
+        background-size: 3px 3px;
+
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    }
+
+    @include tablet {
+        height: 600px;
+        background-image: url('../img/hero-tab.jpg');
+    }
+
+    @include desktop {
+        height: 100vh;
+        min-height: 450px;
+        background-image: url('../img/hero-desk.jpg');
+        background-size: cover;
+    }
+
+    .wrapper {
+        height: 100%;
+    }
+
+    &__cont {
+        // .hero__cont
+        position: absolute;
+        left: 2*$base-unit;
+        bottom: 2*$base-unit;
+        z-index: 10;
+
+        h2,
+        p {
+            color: $white;
+            @extend %textShadow;
+        }
+    }
+
+    .btn {
+        span {
+
+            &:after {
+                // span:after
+                content: '\2192';
+                display: inline-block;
+                margin-left: 0.25*$base-unit;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+//.box-gradient {
+   // height: 200px;
+   // background-image: linear-gradient(to bottom, blue 20px, transparent 20px),
+//linear-gradient(to right, red 20px, transparent 20px);
+    //background-size: Xpx Ypx;}
+
+//#XXYYZZ - > X - red, Y - green, Z - blue , 0-F #FFFFFF  #000000
+// rgb/rgba ->  rgb(0-255, 0-255, 0-255), rgba(255, 15, 15, 0.3)

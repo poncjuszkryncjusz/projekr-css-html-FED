@@ -1,0 +1,18 @@
+@mixin tablet {
+    @media screen and (min-width: $bp-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $bp-desktop) {
+        @content;
+    }
+}
+@mixin borderRadius($value) {
+    border-radius: $value;
+}
+@mixin verticalGradient($value1, $value2) {
+    background-image: linear-gradient(to bottom, $value1, $value2);
+    border: 20px solid $value1;
+}

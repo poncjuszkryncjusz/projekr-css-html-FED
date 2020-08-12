@@ -1,0 +1,57 @@
+<div class="component form">
+    <div class="wrapper">
+        <h2>Our form</h2>
+        <form class="my-form" novalidate="novalidate">
+            <div class="column">
+                <div class="row">
+                    <label for="">Field for text</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="Enter your name" required />
+                    <span class="msg-error">Wrong text!</span>
+
+                </div>
+                <div class="row">
+                    <label for="">Field for email</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="Enter your email" required />
+                    <span class="msg-error">Wrong text!</span>
+
+                </div>
+                <div class="row">
+                    <label for="">Field for postal code</label>
+                    <input type="text" id="name" name="name" class="npt" placeholder="xx-xxx"
+                        pattern="[0-9]{2}\-[0-9]{3}" required />
+                        <span class="msg-error">Wrong text!</span>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <label for="myChoose">Field for select</label>
+                    <select class="npt" id="myChoose" name="myCoose" required>
+                        <option value="" selected>Choose something...</option>
+                        <option value="1000">1000zl</option>
+                        <option value="2000">2000zl</option>
+                    </select>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+                <div class="row">
+                    <p>Are you sure?</p>
+                    <input type="radio" id="yes" name="decision" value="yes" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="decision" value="no" />
+                    <label for="yes">No</label>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+                <div class="row">
+                    <p>Please agree with me</p>
+                    <input type="checkbox" id="agree" name="agree" value="yes" />
+                    <label for="agree">Yes</label>
+                    <span class="msg-error">Choose something!</span>
+
+                </div>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>

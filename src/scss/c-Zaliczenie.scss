@@ -1,0 +1,84 @@
+.zaliczenie {
+    .wrapper {
+        padding: 0;
+        border: none;
+    }
+    &_boxy {
+        display: flex;
+        flex-wrap: wrap;
+        .boxxx {
+            flex-basis: auto;
+            transition: all 1s;
+
+            @include tablet {
+                flex-basis: 40%;
+            }
+            @include desktop {
+                flex-basis: 100%;
+            }
+            padding: $base-unit $base-unit;
+            margin: $space;
+            &:nth-child(odd) {
+                background-color: $color-3-light;
+            }
+            &:nth-child(even) {
+                background-color: $color-3;
+            }
+            h2 {
+                color: $color-4;
+            }
+            figure {
+                padding: 4px;
+                margin: auto;
+                position: relative;
+                float: none;
+                margin-right: $space;
+                @include tablet {
+                    float: none;
+                }
+                @include desktop {
+                    float: left;
+                }
+                figcaption {
+                    padding: 4px;
+                    text-align: left;
+                }
+            }
+        }
+        .boxxx:hover {
+            transform: translateY(-3%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            min-height: 42px;
+            min-width: 152px;
+            padding: $btn-padding-top $btn-padding-right $btn-padding-bottom $btn-padding-left;
+            font-size: $base-unit;
+            line-height: 1.5 * $base-unit;
+            color: $white;
+            background-color: $color-4;
+            border: 1px solid $color-4;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                background-color: $white;
+                color: $color-4;
+            }
+            span {
+                &:after {
+                    content: "\1F6D2";
+                    display: inline-block;
+                    margin-left: 0.25 * $base-unit;
+                    font-size: 1em;
+                }
+            }
+        }
+        .btn:active {
+            transform: translateY(-3px);
+        }
+    }
+}
